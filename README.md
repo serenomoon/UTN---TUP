@@ -91,7 +91,7 @@ NombreDelArchivo
 
 > añadir todos los archivos al area de preparacion
 
-# git commit -m "primer comit"
+# git commit -m "primer commit"
 
 > añadir los archivos al git local junto con un mensaje
 
