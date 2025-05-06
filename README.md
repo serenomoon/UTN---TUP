@@ -86,7 +86,9 @@
 NombreDelArchivo
 
 > añadir el archivo especifico al area de preparacion
-> .
+
+.
+
 > añadir todos los archivos al area de preparacion
 
 # git commit -m "primer comit"
