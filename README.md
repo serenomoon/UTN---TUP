@@ -83,11 +83,11 @@
 
 # git add
 
-NombreDelArchivo
+git add NombreDelArchivo
 
 > añadir el archivo especifico al area de preparacion
 
-.
+git add .
 
 > añadir todos los archivos al area de preparacion
 
