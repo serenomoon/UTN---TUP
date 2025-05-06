@@ -1,6 +1,6 @@
 
 # 📚 Programación
-
+<br/><br/>
 ## 🔢 Variables
 
 ### Escalares (Primitivas)
@@ -28,7 +28,7 @@
 - Árboles
 
 ---
-<br/>
+<br/><br/>
 ## 🧠 Estructura de Memoria
 
 ```
@@ -44,7 +44,7 @@
 ```
 
 ---
-<br/>
+<br/><br/>
 ## 📊 Comparación visual de Pila y Montón
 
 ```
@@ -70,7 +70,7 @@
                                 |                            
                                 |
 ```
-<br/>
+<br/><br/>
 ## 🔢 Git
 
 # git status
