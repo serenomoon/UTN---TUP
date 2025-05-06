@@ -70,3 +70,33 @@
                                 |                            
                                 |
 ```
+
+## 🔢 Git
+
+# git status
+
+> verificar el estado del repositorio
+
+# git clone NombreDelRepo
+
+> clonar el repositorio
+
+# git add
+
+NombreDelArchivo
+
+> añadir el archivo especifico al area de preparacion
+> .
+> añadir todos los archivos al area de preparacion
+
+# git commit -m "primer comit"
+
+> añadir los archivos al git local junto con un mensaje
+
+# git log
+
+> ver todos los commits hechos por los usuarios
+
+# git push
+
+> subir archivos a github (pushear)
