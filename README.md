@@ -28,7 +28,7 @@
 - Árboles
 
 ---
-
+<br/>
 ## 🧠 Estructura de Memoria
 
 ```
@@ -44,7 +44,7 @@
 ```
 
 ---
-
+<br/>
 ## 📊 Comparación visual de Pila y Montón
 
 ```
@@ -70,7 +70,7 @@
                                 |                            
                                 |
 ```
-
+<br/>
 ## 🔢 Git
 
 # git status
