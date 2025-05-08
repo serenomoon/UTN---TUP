@@ -125,6 +125,3 @@ def jugar_piedra_papel_tijera(aciertos_jugador = 0, aciertos_maquina = 0, ronda 
         print(f"Maquina: {aciertos_maquina}")
         print(f"Ganador de la partida: {verificar_ganador_partida(aciertos_jugador, aciertos_maquina)}")
 
-
-
-jugar_piedra_papel_tijera()
