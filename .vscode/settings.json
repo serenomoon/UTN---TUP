@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Programacion/Ejercicios/4-Guia Funciones/Desafio_Modulos"
+    ]
+}
