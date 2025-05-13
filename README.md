@@ -24,7 +24,7 @@ Ej: edad= 45   nombre= Carlitos
   - Vectores
 
   ```
-  Unidimensionales
+  Unidimensionales, un solo tipo de dato
   Ej: edades=[45,20,18] nombres=[Carlitos, Juan, Ana]
   Un for loop para recorrerla
   ```
