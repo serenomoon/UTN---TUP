@@ -1,21 +1,48 @@
-
 # 📚 Programación
+
 <br/><br/>
+
 ## 🔢 Variables
 
 ### Escalares (Primitivas)
+
 - `int`
 - `float`
 - `str`
 - `bool`
+
+```
+Ej: edad= 45   nombre= Carlitos
+```
 
 ### No Escalares (No Primitivas)
 
 #### Lineales
 
 - **Estáticas**
+
   - Vectores
+
+  ```
+  Unidimensionales
+  Ej: edades=[45,20,18] nombres=[Carlitos, Juan, Ana]
+  Un for loop para recorrerla
+  ```
+
   - Matrices
+
+  ```
+  Bidimensionales
+  Ej: matriz = [
+                  [3,5,9], #--> Fila
+                  [2,1,8],
+                  [4,0,9],
+                  [2,1,4],
+                  #|
+                  #Columna
+                ]
+  Dos for loop para recorrerla
+  ```
 
 - **Dinámicas**
   - Listas
@@ -28,7 +55,9 @@
 - Árboles
 
 ---
+
 <br/><br/>
+
 ## 🧠 Estructura de Memoria
 
 ```
@@ -44,7 +73,9 @@
 ```
 
 ---
+
 <br/><br/>
+
 ## 📊 Comparación visual de Pila y Montón
 
 ```
@@ -63,14 +94,16 @@
      |        7        | 0x48   |    ||  2344   ||   |    |            |    3128            |
      |_________________|        |    ||_________||   |    |  _______   |          _______   |
      |                 |        |    |           |   |    | |       |<-|         |       |  |
-     |        8        | 0x52   |    |           |   |    | |   7   |----------->|   7   |  | 
+     |        8        | 0x52   |    |           |   |    | |   7   |----------->|   7   |  |
      |_________________|        |    |           |___|    | |_______|            |_______|  |
         |           |           |    |           |        |    4444                 4444    |
         |___________|           |    |___________|        |_________________________________|
-                                |                            
+                                |
                                 |
 ```
+
 <br/><br/>
+
 ## 🔢 Git
 
 # git status
