@@ -1,6 +1,16 @@
 from array_dinamico import *
 
 def productos_en_comun(cliente1: list, cliente2: list, cliente3: list) -> list:
+    """Chequea que productos en comun tienen los clientes
+
+    Args:
+        cliente1 (list): Lista de productos del cliente1
+        cliente2 (list): Lista de productos del cliente2
+        cliente3 (list): Lista de productos del cliente3
+
+    Returns:
+        list: Devuelve una lista de los productos que tienen en comun
+    """
     en_comun = crear_vector(None, 0)
 
     for i in range(len(cliente1)):
@@ -31,6 +41,16 @@ def productos_en_comun(cliente1: list, cliente2: list, cliente3: list) -> list:
 
 
 def productos_exclusivos(cliente1: list, cliente2: list, cliente3: list) -> list:
+    """Chequea los productos exclusivos de cada cliente
+
+    Args:
+        cliente1 (list): Lista de productos del cliente1
+        cliente2 (list): Lista de productos del cliente2
+        cliente3 (list): Lista de productos del cliente3
+
+    Returns:
+        list: Devuelve una lista de los productos exclusivos
+    """
     productos_exclusivos = crear_vector(None, 0)
 
     for i in range(len(cliente1)):
@@ -94,6 +114,16 @@ def productos_exclusivos(cliente1: list, cliente2: list, cliente3: list) -> list
 
 
 def productos_totales(cliente1: list, cliente2: list, cliente3: list) -> list:
+    """Arma una lista con todos los productos que poseen los clientes
+
+    Args:
+        cliente1 (list): Lista de productos del cliente1
+        cliente2 (list): Lista de productos del cliente2
+        cliente3 (list): Lista de productos del cliente3
+
+    Returns:
+        list: Devuelve una lista del total de productos
+    """
     total_productos = crear_vector(None, 0)
 
     for i in range(len(cliente1)):
