@@ -40,70 +40,32 @@
 import sys
 from os import system
 from funciones_cuadrado_magico import *
-# 3x3
-# n = 4
-# M = (n*(n**2+1))/2
-# print(f"M de {n}x{n} es: {M}")
-# 1 = 1
-# 2 = 5
-# 3 = 15
-# 4 = 34
-# 5 = 65
-# 6 = 111
-
-# 2x2 no verifica
-matriz2x2 = [
-    [2,4],
-    [1,3],
-]
-
-matriz3x3 = [
-    [2,7,6],
-    [9,5,1],
-    [4,3,8]
-]
-
-matriz4x4 = [
-    [16, 3, 2,13],
-    [ 5,10,11, 8],
-    [ 9, 6, 7,12],
-    [ 4,15,14, 1],
-]
 
 def main() -> None:
     menu_open = True
+    vector = []
     while menu_open:
-        print("1. Ingresar matriz\n2. Generar matriz aleatoria\n3. Es un cuadrado magico?\n4. Salir del programa")
+        print("1. Ingresar matriz\n2. Generar matriz aleatoria\n3. Ver cuadrado magico cargado\n4. Salir del programa")
         opcion = int(input("Ingresar una opcion: "))
         match opcion:
             case 1:
-                pass
+                n = int(input("¿Cuando sera el valor de N (N>2) en un cuadrado de NxN?: "))
+                vector = ingresar_cuadrado_magico(n)
             case 2:
-                pass
+                vector = generador_cuadrado_magico()
+                print("Cuadrado magico generado.")
             case 3:
-                pass
+                if len(vector) < 2:
+                    print("No hay un cuadrado magico valido cargado")
+                else:
+                    mostrar_cuadrado(vector)
             case 4:
                 menu_open = False
                 print("Saliendo del programa")
+        system("pause")
         system("cls")
-
-
-# test = matriz4x4
-
-# suma_hori = suma_horizontal(test)
-# print(f"Suma horizontal: {suma_hori}")
-# suma_verti = suma_vertical(test)
-# print(f"Suma vertical: {suma_verti}")
-# suma_diago = suma_diagonal(test)
-# print(f"Suma diagonal: {suma_diago}")
-# suma_diago_inver = suma_diagonal_invertida(test)
-# print(f"Suma diagonal invertida: {suma_diago_inver}")
-
-# es_magikh = verificar_cuadrado_magico(test)
-# print(f"La matriz es un cuadrado magico: {es_magikh}")
 
 
 if __name__ == "__main__":
     sys,exit(main())
 
-# print(M)
