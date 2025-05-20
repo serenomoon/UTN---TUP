@@ -29,6 +29,7 @@ from array_generales import *
 from especificas import *
 import colorama as C
 
+
 def main() -> None:
     bandera_menu = True
     bandera_carga = False
