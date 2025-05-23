@@ -100,6 +100,29 @@ for i in range(len(cadena_con_mas_caracteres)):
 print(cadena_con_mas_caracteres_cambiada)
 
 
+# OTRA FORMA:
+
+def buscar_caracter(caracater_busqueda: str, caracteres_validos: str):
+    encontro = False
+    for i in range(len(caracteres_validos)):
+        if caracater_busqueda == caracteres_validos[i]:
+            encontro = True
+            break
+    return encontro
+
+cadena = "HOLa"
+cadena_minuscula = ""
+caracteres_validos = "ABCDEFGHIJKLMNÑOPQRSTUXYZ"
+
+for i in range(len(cadena)):
+    caracter = cadena[i]
+    if buscar_caracter(caracter, caracteres_validos):
+        conversion = ord(caracter) + 32
+        caracter = chr(conversion)
+    cadena_minuscula += caracter
+
+print(cadena_minuscula)
+
 
 
 

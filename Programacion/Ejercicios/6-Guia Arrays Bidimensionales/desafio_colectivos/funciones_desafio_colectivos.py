@@ -87,6 +87,7 @@ def confirmar_legajo(numero: int, choferes: list) -> bool:
     for i in range(len(choferes)):
         if numero == choferes[i]:
             encontrado = True
+            break
     return encontrado
 
 def confirmar_coche(numero: int, coche: list) -> bool:
@@ -95,6 +96,7 @@ def confirmar_coche(numero: int, coche: list) -> bool:
         for j in range(len(coche[i])):
             if numero == coche[i][j]:
                 encontrado = True
+                break
     return encontrado
     
 

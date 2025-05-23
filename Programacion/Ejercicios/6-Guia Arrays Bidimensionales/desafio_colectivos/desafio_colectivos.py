@@ -44,6 +44,7 @@ def main() -> None:
     colectivos = crear_linea_y_coches(None,5,3)
     choferes = crear_choferes(15)
     recaudacion = crear_matriz(0,5,3)
+    # recaudacion_x_chofer = []
     print(choferes)
     while menu_colectivos:
         opcion = int(input("Colectivos 'El Coletivo':\n1- Cargar planilla de recaudacion\n2- Ver recaudacion de coches y lineas\n3- Ver recaudacion por linea\n4- Ver recaudacion por coche\n5- Ver recaudacion total\n6- Salir del programa\nIngresar una opcion: "))
