@@ -98,7 +98,6 @@ def confirmar_coche(numero: int, coche: list) -> bool:
                 encontrado = True
                 break
     return encontrado
-    
 
 def mostrar_matriz(matriz: list) -> list:
     for i in range(len(matriz)): 
@@ -126,3 +125,18 @@ def mostrar_recaudacion(coches, recaudacion):
             total_linea += recaudacion[i][j]
         print(f"Total Linea {i+1}: ${total_linea}")
         print("") 
+
+def mostrar_recaudacion_unidad(unidad, coches, recaudacion):
+    recaudacion_unidad = 0
+    for i in range(len(coches)):
+        for j in range(len(coches[i])):
+            if unidad == coches[i][j]:
+                recaudacion_unidad = recaudacion[i][j]
+    return recaudacion_unidad
+
+def total_recaudacion(recaudacion):
+    total_recaudado = 0
+    for i in range(len(recaudacion)):
+        for j in range(len(recaudacion[i])):
+            total_recaudado += recaudacion[i][j]
+    return total_recaudado

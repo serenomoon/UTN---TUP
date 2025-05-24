@@ -44,15 +44,16 @@ def main() -> None:
     colectivos = crear_linea_y_coches(None,5,3)
     choferes = crear_choferes(15)
     recaudacion = crear_matriz(0,5,3)
-    # recaudacion_x_chofer = []
     print(choferes)
     while menu_colectivos:
+        usuario = 0
         opcion = int(input("Colectivos 'El Coletivo':\n1- Cargar planilla de recaudacion\n2- Ver recaudacion de coches y lineas\n3- Ver recaudacion por linea\n4- Ver recaudacion por coche\n5- Ver recaudacion total\n6- Salir del programa\nIngresar una opcion: "))
         match opcion:
             case 1:
                 ingresando = True
                 numero_legajo = int(input("Ingrese su numero de legajo: "))
                 if confirmar_legajo(numero_legajo, choferes):
+                    usuario = numero_legajo
                     while ingresando:
                         system("cls")
                         print("Lineas:")
@@ -72,7 +73,13 @@ def main() -> None:
                                 ingresando = False
                                 break
                         if confirmar_coche(numero_linea,colectivos):
-                            recaudo = int(input(f"Ingrese cuando recaudo en el coche N°{numero_linea}: "))
+                            recaudo_erroneo = True
+                            while recaudo_erroneo:
+                                recaudo = int(input(f"Ingrese cuando recaudo el chofer ID {usuario} con el coche N°{numero_linea}: "))
+                                if recaudo < 1:
+                                    print("Error al ingresar la recaudacion...")
+                                else:
+                                    recaudo_erroneo = False
                             recaudacion = carga_racaudacion(recaudo, numero_linea, colectivos, recaudacion)
                             print("Recaudacion agregada")
                             continuar_ingresando = int(input("Seleccione:\n1- Agregar otra recaudacion\n2- Volver al menu\nIngrese una opcion: "))
@@ -89,10 +96,21 @@ def main() -> None:
                 print("Recaudacion de lineas:\n")
                 mostrar_recaudacion(colectivos,recaudacion)
             case 4:
-                pass
+                system("cls")
+                print("Lineas:")
+                mostrar_matriz(colectivos)
+                coche_seleccionado = int(input("Ingrese un coche para ver su recaudacion: "))
+                if confirmar_coche(coche_seleccionado, colectivos):
+                    recaudacion_unidad = mostrar_recaudacion_unidad(coche_seleccionado, colectivos, recaudacion)
+                    print(f"Recaudacion hecha por la unidad N°{coche_seleccionado}: ${recaudacion_unidad}")
+                else:
+                    print("El numero de coche seleccionado, no existe...")
             case 5:
-                pass
+                system("cls")
+                recaudacion_total = total_recaudacion(recaudacion)
+                print(f"Total recaudado por todos los coches: ${recaudacion_total}")
             case 6:
+                system("cls")
                 print("Saliendo del programa...")
                 menu_colectivos = False
         system("pause")
