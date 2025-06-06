@@ -60,7 +60,6 @@ lista2 = [] # Cambia el id de la variable, no asi con clear
 del lista2 # La destruye, elimina la variable
 
 
-
 #VARIANTE DE FOR LOOP
 # for i in range(len(lista)):
 #     print(lista[i])
