@@ -1,7 +1,7 @@
 # Los sets no aceptan valores repetidos
 # Se crean de dos formas:
 
-# mi_set = set()
+mi_set = set() # Le puedo añadir una lista y la convierto
 mi_set = {4,6,7,5,2,3,4,5} # Si imprimo esto, los valores repetidos desaparecen 
 # y los ordena aleatoriamente.
 # No tienen indice (mi_set[0]), pero se puede iterar con un for

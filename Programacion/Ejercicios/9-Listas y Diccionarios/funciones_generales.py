@@ -1,5 +1,5 @@
 from datetime import datetime
-from datos import *
+from lady_gaga import playlist_lady_gaga
 
 def split_string(cadena: str, caracter: str = " ", numero: int = 2) -> list:
     """Separa un array en dos partes y devuelve una de las dos o ambos
@@ -47,7 +47,12 @@ def obtener_nombre_tema(titulo: str) -> str:
     Returns:
         str: nombre del tema
     """
-    return split_string(titulo,"-",1).strip()
+    tema = titulo
+    for i in range(len(titulo)):
+        if titulo[i] == "-":
+            tema = split_string(titulo,"-",1).strip()
+
+    return tema
 
 
 def convertir_vistas_numerico(vistas: str) -> int:
