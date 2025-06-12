@@ -29,11 +29,17 @@ def obtener_colaboradores(titulo: str) -> list:
     Returns:
         list: Lista de colaboradores
     """
-    colaboradores_recortados = split_string(titulo,"-",0)
+    tiene_colaboradores = False
     nueva_lista = []
-    for i in range(len(colaboradores_recortados.split("|"))):
-        nuevo = colaboradores_recortados.split("|")[i].strip()
-        nueva_lista.append(nuevo)
+    for i in range(len(titulo)):
+        if titulo[i] == "-":
+            tiene_colaboradores = True
+            break
+    if tiene_colaboradores:
+        colaboradores_recortados = split_string(titulo,"-",0)
+        for i in range(len(colaboradores_recortados.split("|"))):
+            nuevo = colaboradores_recortados.split("|")[i].strip()
+            nueva_lista.append(nuevo)
     return nueva_lista
 
 
